@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#20131d">
+  <meta name="description" content="A little birthday celebration made especially for Sadha.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>For Sadha — A Birthday Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="is-locked">
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <div class="nav-menu" id="navMenu">
+    </div><div class="lock-screen" id="lockScreen" aria-labelledby="lockTitle">
+    <div class="lock-orbit lock-orbit-one" aria-hidden="true"></div>
+    <div class="lock-orbit lock-orbit-two" aria-hidden="true"></div>
+    <div class="lock-stars" id="lockStars" aria-hidden="true"></div>
+    <div class="lock-card">
+      <div class="lock-monogram" aria-hidden="true">S<span>✦</span></div>
+      <p class="eyebrow lock-eyebrow">A private little celebration</p>
+      <h1 id="lockTitle">Something lovely<br><em>is waiting for you.</em></h1>
+      <p class="lock-copy">A birthday page made with care, just for Sadha.</p>
+      <form id="passwordForm" class="password-form" novalidate>
+        <label for="passwordInput">Your secret password</label>
+        <div class="password-input-wrap">
+          <input id="passwordInput" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required aria-describedby="passwordError">
+          <button class="password-toggle" id="togglePasswordButton" type="button" aria-label="Show password">◉</button>
+        </div>
+        <p class="password-error" id="passwordError" role="alert" aria-live="polite"></p>
+        <button class="button button-gold button-wide" type="submit">Open your surprise <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="lock-footnote"><span>✧</span> A little page, with lots of good wishes <span>✧</span></p>
+    </div>
+    <p class="lock-bottom">31 · 10 · 2026 <span>—</span> Made for Sadha</p>
+  </div>
+
+  <div class="site-shell" id="website" hidden>
+    <header class="site-header" id="siteHeader">
+      <nav class="nav-wrap container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Sadha birthday home"><span class="brand-mark">👻</span><span class="brand-name">for Sadha<span class="brand-dot">.</span></span></a>
+        <button class="menu-toggle" id="menuButton" type="button" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false"><span></span><span></span></button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#birthday">The day</a>
+          <a href="#portrait">A portrait</a>
+          <a href="#wishes">Wishes</a>
+          <a href="#letter">A note</a>
+        </div>
+
+        <!-- Birthday Music Button -->
+<button class="music-button"
+        id="musicButton"
+        type="button"
+        aria-label="Play birthday music"
+        aria-pressed="false">
+
+    <span class="music-button-icon">♫</span>
+    <span class="music-button-text">Play Music</span>
+
+</button>
+        <button class="lock-button" id="lockWebsiteButton" type="button" aria-label="Lock the website" title="Lock website"><span aria-hidden="true">⌑</span><span class="lock-button-label">Private</span></button>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="hero" id="home">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Saturday · 31 October 2026</p>
+            <p class="script-intro">A little celebration for</p>
+            <h1>Happy Birthday,<br><span class="hero-name">Sadha</span><span class="hero-period">.</span></h1>
+            <p class="hero-description">Today is all about celebrating you — your story, your dreams, and all the wonderful things still waiting ahead.</p>
+            <div class="hero-meta">
+              <span class="age-seal"><strong>20</strong><small>years</small></span>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <span class="meta-copy"><strong>Chapter 20</strong><small>A beautiful new beginning</small></span>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-gold" href="#birthday">Explore your day <span aria-hidden="true">↓</span></a>
+              <button class="text-button" id="celebrateButton" type="button"><span class="sparkle-icon" aria-hidden="true">✧</span> Send a little sparkle</button>
+            </div>
+          </div>
+
+          <div class="hero-art reveal reveal-delay" aria-label="A decorative portrait frame for Sadha's photo">
+            <div class="art-orbit art-orbit-a" aria-hidden="true"></div>
+            <div class="art-orbit art-orbit-b" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <div class="portrait-topline"><span>THE BIRTHDAY EDITION</span><span>№ 020</span></div>
+              <div class="portrait-image-wrap">
+                <img class="portrait-image" id="sadhaPhoto" src="Sadha.jpeg" alt="Sadha's birthday portrait" loading="eager">
+                <div class="portrait-fallback" id="photoFallback" aria-hidden="true" hidden><span class="fallback-initial">S</span><span class="fallback-caption">A beautiful day<br>for a beautiful soul</span></div>
+                <span class="portrait-photo-label">A moment to keep</span>
+              </div>
+              <div class="portrait-bottomline"><span>31 / 10 / 2006</span><span class="portrait-star">✳</span><span>WITH LOVE & LIGHT</span></div>
+            </div>
+            <span class="floating-note floating-note-top">a day to remember <b>✦</b></span>
+            <span class="floating-note floating-note-bottom"><b>20</b> &nbsp;and blooming</span>
+            <span class="hero-spark hero-spark-one" aria-hidden="true">✧</span>
+            <span class="hero-spark hero-spark-two" aria-hidden="true">✳</span>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#birthday"><span>SCROLL TO CELEBRATE</span><i aria-hidden="true"></i></a>
+      </section>
+
+      <section class="birthday-section section-pad" id="birthday">
+        <div class="container birthday-layout">
+          <div class="section-intro reveal">
+            <p class="eyebrow eyebrow-dark">THE DATE TO REMEMBER</p>
+            <h2>A new chapter<br><em>begins today.</em></h2>
+            <p>Twenty years of becoming, learning, laughing, and growing. May the next chapter be your brightest one yet.</p>
+            <div class="date-stamp"><span class="date-day">31</span><span class="date-rest"><strong>OCTOBER</strong><small>2006 — 2026</small></span></div>
+          </div>
+          <div class="countdown-panel reveal reveal-delay">
+            <div class="countdown-panel-head"><span class="tiny-star">✳</span><span id="countdownKicker">THE CELEBRATION BEGINS IN</span><span class="tiny-star">✳</span></div>
+            <div class="countdown-grid" id="countdownGrid" aria-live="polite">
+              <div class="countdown-unit"><strong id="days">00</strong><span>Days</span></div>
+              <div class="countdown-colon">:</div>
+              <div class="countdown-unit"><strong id="hours">00</strong><span>Hours</span></div>
+              <div class="countdown-colon">:</div>
+              <div class="countdown-unit"><strong id="minutes">00</strong><span>Minutes</span></div>
+              <div class="countdown-colon">:</div>
+              <div class="countdown-unit"><strong id="seconds">00</strong><span>Seconds</span></div>
+            </div>
+            <div class="birthday-live" id="birthdayLive" hidden>
+              <span class="live-spark">✦</span>
+              <strong>Happy 20th Birthday, Sadha!</strong>
+              <span>Happy 20th Birthday</span>
+            </div>
+            <div class="countdown-panel-foot"><span>31 October</span><span class="foot-line"></span><span>Chapter 20</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portrait-section section-pad" id="portrait">
+        <div class="container">
+          <div class="portrait-heading reveal">
+            <p class="eyebrow">A LITTLE MOMENT, PRESERVED</p>
+            <h2>Simply <em>you.</em></h2>
+            <p>One picture, one lovely moment, and a whole lot to celebrate.</p>
+          </div>
+          <button class="single-photo-card reveal" id="openPhotoButton" type="button" aria-label="View Sadha's portrait">
+            <span class="photo-card-corner photo-card-corner-tl" aria-hidden="true">✳</span>
+            <span class="photo-card-corner photo-card-corner-br" aria-hidden="true">✳</span>
+            <img src="image/Sadha1.jpeg" alt="A photo of Sadha" id="galleryPhoto" loading="lazy">
+            <span class="photo-card-fallback" id="galleryPhotoFallback" aria-hidden="true" hidden>S</span>
+            <span class="photo-card-caption"><span>THE ONE & ONLY</span><strong>A little piece of this beautiful day</strong><span class="photo-expand">↗</span></span>
+          </button>
+          <p class="photo-note">Some moments don't need a thousand pictures to be special.</p>
+        </div>
+      </section>
+
+      <section class="wishes-section section-pad" id="wishes">
+        <div class="container">
+          <div class="wishes-heading reveal">
+            <p class="eyebrow eyebrow-dark">FOR THE YEAR AHEAD</p>
+            <h2>Twenty looks<br><em>lovely on you.</em></h2>
+            <p>A few little wishes for the many wonderful things waiting in your next chapter.</p>
+          </div>
+          <div class="wish-grid">
+            <article class="wish-card reveal"><span class="wish-number">01</span><span class="wish-icon">✧</span><h3>Big dreams</h3><p>May you find the courage to chase every dream that makes your heart feel alive.</p></article>
+            <article class="wish-card reveal reveal-delay-1"><span class="wish-number">02</span><span class="wish-icon">☼</span><h3>Bright days</h3><p>May ordinary days surprise you with little reasons to smile and be grateful.</p></article>
+            <article class="wish-card reveal reveal-delay-2"><span class="wish-number">03</span><span class="wish-icon">❀</span><h3>Good people</h3><p>May you always be surrounded by kind hearts, honest laughter, and gentle souls.</p></article>
+            <article class="wish-card reveal reveal-delay-3"><span class="wish-number">04</span><span class="wish-icon">∞</span><h3>New adventures</h3><p>May this year bring new places, beautiful opportunities, and stories worth telling.</p></article>
+          </div>
+          <div class="wish-generator reveal">
+            <div class="wish-generator-mark" aria-hidden="true">✳</div>
+            <div class="wish-generator-copy"><span>A LITTLE EXTRA MAGIC</span><p id="randomWish" aria-live="polite">Every new chapter deserves a beautiful beginning. May yours be filled with joy.</p></div>
+            <button class="button button-outline" id="newWishButton" type="button">Another wish <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter-section section-pad" id="letter">
+        <div class="letter-glow" aria-hidden="true"></div>
+        <div class="container letter-container">
+          <div class="letter-heading reveal">
+            <p class="eyebrow">A NOTE, JUST FOR YOU</p>
+            <h2>Words from<br><em>the heart.</em></h2>
+          </div>
+          <div class="letter-card reveal reveal-delay">
+            <div class="letter-card-top"><span>31 · 10 · 2026</span><span class="letter-flower">❀</span><span>A BIRTHDAY NOTE</span></div>
+            <div class="letter-card-body">
+              <p class="letter-dear">Dear Sadha,</p>
+              <p>Happy 20th Birthday! I hope today reminds you how special you are and how much good there is to look forward to.</p>
+              <p>May this new chapter bring you confidence to follow your dreams, strength for every challenge, peace in the little moments, and countless reasons to smile. Keep being yourself, keep growing, and never stop believing in the beautiful things you can achieve.</p>
+              <p>Wishing you a year filled with happiness, meaningful memories, exciting opportunities, and all the good things you deserve.</p>
+              <p class="letter-signoff">Have the loveliest birthday, <span>Sadha.</span></p>
+              <div class="letter-signature">With warm wishes <span>✧</span></div>
+            </div>
+            <div class="letter-card-bottom"><span>MADE ESPECIALLY FOR YOU</span><span>✦</span><span>CHAPTER 20</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-section">
+        <div class="final-stars" aria-hidden="true"><i>✧</i><i>✳</i><i>✧</i><i>✦</i><i>✧</i></div>
+        <div class="container final-content reveal">
+          <p class="eyebrow">AND SO, A NEW CHAPTER BEGINS</p>
+          <div class="final-flower" aria-hidden="true">✳</div>
+          <h2>Keep shining,<br><em style="font-size:xxx-large;">My  Dear  Nilaa 🌙.</em></h2>
+          <p>May 20 be the year you surprise yourself with how far you can go.</p>
+          <button class="button button-gold final-button" id="finalCelebrateButton" type="button">Celebrate this moment <span aria-hidden="true">✦</span></button>
+          <span class="final-date">31 · OCTOBER · 2026</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#home">BY:- Mr.Obito<span>.</span></a><p>A little birthday page, made with good wishes for Sadha.</p><a class="back-top" href="#home" aria-label="Back to top">↑</a></footer>
+  </div>
+
+  <div class="photo-lightbox" id="photoLightbox" hidden role="dialog" aria-modal="true" aria-label="Sadha's birthday photo">
+    <button class="lightbox-close" id="closePhotoButton" type="button" aria-label="Close photo">×</button>
+    <img src="sadha-photo.jpg" alt="Sadha's birthday portrait" id="lightboxPhoto">
+    <span class="lightbox-caption">A little moment to keep · Sadha, 2026</span>
+  </div>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Background Birthday Music -->
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="leberch-happy-birthday-581704.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+</body>
+</html>
+```
